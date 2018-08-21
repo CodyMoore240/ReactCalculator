@@ -1,0 +1,12 @@
+.calculatorContainer {
+  height: 500px;
+  width: 400px;
+  border: black solid 1px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
