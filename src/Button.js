@@ -10,9 +10,16 @@ class Button extends Component {
   }
 
   render() {
+    let inlineStyles = {}
+
+    //if this needs to be a half button then inline style it
+    if (this.props.half) {
+      inlineStyles.height = '40px'
+    }
+
     return (
       //Container for the calculator
-      <button className="button" onClick={this.handleOnClick} type="button">{this.props.value}</button>
+      <button className="button" onClick={this.handleOnClick} type="button" style={inlineStyles}>{this.props.value}</button>
     );
   }
 }

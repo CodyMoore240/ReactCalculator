@@ -99,7 +99,7 @@ class CalculatorContainer extends Component {
           value={this.state.inputValue}
         />
         <div className="buttonsContainer">
-          <div className="buttonsContainerNumbers">
+          <div className="buttonsContainer-sub buttonsContainerNumbers">
             <Button clickFunction={this.storeValue} value={1}/>
             <Button clickFunction={this.storeValue} value={2}/>
             <Button clickFunction={this.storeValue} value={3}/>
@@ -111,13 +111,13 @@ class CalculatorContainer extends Component {
             <Button clickFunction={this.storeValue} value={9}/>
             <Button clickFunction={this.storeValue} value={0}/>
           </div>
-          <div className="buttonsContainerSigns">
-            <Button clickFunction={this.resetCalc} value="c"/>
-            <Button clickFunction={this.calculateValue} value="="/>
-            <Button clickFunction={this.storeCalc} value="-"/>
-            <Button clickFunction={this.storeCalc} value="+"/>
-            <Button clickFunction={this.storeCalc} value="x"/>
-            <Button clickFunction={this.storeCalc} value="/"/>
+          <div className="buttonsContainer-sub buttonsContainerOperators">
+            <Button clickFunction={this.resetCalc} half={true} value="c"/>
+            <Button clickFunction={this.calculateValue} half={true} value="="/>
+            <Button clickFunction={this.storeCalc} half={true} value="-"/>
+            <Button clickFunction={this.storeCalc} half={true} value="+"/>
+            <Button clickFunction={this.storeCalc} half={true} value="x"/>
+            <Button clickFunction={this.storeCalc} half={true} value="/"/>
             {/* <Button storeValue={this.storeValue} value="="/> */}
           </div>
         </div>

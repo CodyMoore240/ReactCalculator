@@ -1,4 +1,10 @@
 .calculatorInput {
-  width: 100%;
-  margin-bottom: 30px;
+  width: calc(100% - 60px);
+  margin: 20px;
+  line-height: 30px;
+  font-size: 30px;
+  background-color: white;
+  outline: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }

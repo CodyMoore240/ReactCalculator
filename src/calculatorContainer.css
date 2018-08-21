@@ -1,12 +1,24 @@
 .calculatorContainer {
   height: 500px;
-  width: 400px;
   border: black solid 1px;
-  padding: 20px;
+  padding-bottom: 20px;
   margin-bottom: 100px;
+  background-color: #E7E7E8;
 }
 
 .buttonsContainer {
   display: flex;
   justify-content: center;
+}
+
+.buttonsContainerNumbers {
+  width: 300px;
+}
+
+.buttonsContainerOperators {
+  width: 100px;
+}
+
+.buttonsContainer-sub {
+  padding: 10px;
 }
